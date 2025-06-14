@@ -83,7 +83,7 @@ function Cabecalho() {
         <Banner>Seja bem-vindo ao meu espaço profissional!</Banner>
         <Profile src={foto} alt="Profile" />
         <Role> Desevolvedor Júnior III Full-Stack </Role>
-        <Footer>Desenvolvedor<br />© 2025 Adriano, Inc. sggggggggggggg</Footer>
+        <Footer>Desenvolvedor<br />© 2025 Adriano, Inc.</Footer>
       </Principal>  
       <Divider />
       <RightSide>
