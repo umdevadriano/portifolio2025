@@ -71,10 +71,10 @@ function Cabecalho() {
     margin-bottom: 12px;
   `;
 
-  const Description = styled.p`
-    font-size: 16px;
-    color: #555;
-  `;
+    const Description = styled.p`
+      font-size: 16px;
+      color: #555;
+    `;
 
   return (
     <>
