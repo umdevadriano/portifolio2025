@@ -7,6 +7,7 @@ function Final() {
         width: 100%;
         height: 25%;
         background-color: #1d1a1a;
+        color: white;
         overflow: hidden;
         margin: 0;
         padding: 0;

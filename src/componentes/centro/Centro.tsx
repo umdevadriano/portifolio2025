@@ -7,6 +7,7 @@ function Centro() {
         width: 100%;
         height: 50%;
         background-color: #cfb6b6;
+        color: white;
         overflow: hidden;
         margin: 0;
         padding: 0;
