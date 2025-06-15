@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import foto from '../assets/perfil.png'
+import foto from '../assets/foto2.png'
 const data = new Date();
 const dia = String(data.getDate()).padStart(2, '0'); 
 const mes = data.toLocaleString('pt-BR', { month: 'long' }); 
@@ -32,9 +32,10 @@ function Cabecalho() {
   `;
 
   const Profile = styled.img`
-    width: 120px;
-    height: 120px;
-    border-radius: 100%;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border:solid 4px #eb4f44;
     margin: 24px 0;
   `;
 
