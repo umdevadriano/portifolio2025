@@ -232,7 +232,7 @@ const Profile = styled.img`
         </ProfileWrapper>
       
         <Role> Desevolvedor Júnior III Full-Stack </Role>
-        <Footer>Desenvolvedor<br />© 2025 Adriano, Inc.</Footer>
+        <Footer>Desenvolvedor<br />© 2025 Adriano Silva Sampaio</Footer>
       </Principal>  
       <Divider />
       <RightSide>
