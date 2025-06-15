@@ -158,10 +158,10 @@ const Description = styled.p`
 
   @keyframes shine {
     0% {
-      transform: translateX(-100%);
+      transform: translateX(-10%);
     }
     100% {
-      transform: translateX(200%);
+      transform: translateX(200%);   
     }
   }
 `;
