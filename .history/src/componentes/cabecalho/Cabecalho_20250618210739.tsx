@@ -1,13 +1,21 @@
 import styled, { keyframes } from 'styled-components';
 import foto from '../assets/foto2.png'
 import Principal from '../Principal/Principal';
-
 const data = new Date();
 const dia = String(data.getDate()).padStart(2, '0'); 
 const mes = data.toLocaleString('pt-BR', { month: 'long' }); 
 const ano = data.getFullYear(); 
 
 function Cabecalho() {
+ 
+  // const Principal = styled.div`
+  //   flex: 1;
+  //   padding: 32px;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  // `;
+
   const Title = styled.h2`
     font-size: 32px;
     margin-bottom: 24px;
@@ -107,6 +115,12 @@ const Description = styled.p`
     bottom: 0;
     width: 100%;
     height: 2px;
+    /* background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.1)
+    ); */
     border-radius: 1px;
     overflow: hidden;
   }
@@ -193,17 +207,19 @@ const Profile = styled.img`
 
   return (
     <>
-      <Principal>
+      {/* <Principal> */}
+       <Principal>
         <Title>Acompanhe aqui minhas atualizações.</Title>
         <Banner>Seja bem-vindo ao meu espaço profissional!</Banner>
         <ProfileWrapper>
           <SpinnerBorder />
           <Profile src={foto} alt="Foto de perfil" />
         </ProfileWrapper>
+      
         <Role> Desevolvedor Júnior III Full-Stack </Role>
         <Footer>Desenvolvedor<br />© 2025 Adriano Silva Sampaio</Footer>
-      </Principal>
-     
+      {/* </Principal>   */}
+     </Principal>
       <Divider />
       <RightSide>
         <Date>{dia}  {mes} , {ano} </Date>

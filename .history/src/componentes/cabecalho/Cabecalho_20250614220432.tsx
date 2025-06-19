@@ -1,13 +1,20 @@
 import styled, { keyframes } from 'styled-components';
 import foto from '../assets/foto2.png'
-import Principal from '../Principal/Principal';
-
 const data = new Date();
 const dia = String(data.getDate()).padStart(2, '0'); 
 const mes = data.toLocaleString('pt-BR', { month: 'long' }); 
 const ano = data.getFullYear(); 
 
 function Cabecalho() {
+ 
+  const Principal = styled.div`
+    flex: 1;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  `;
+
   const Title = styled.h2`
     font-size: 32px;
     margin-bottom: 24px;
@@ -37,6 +44,11 @@ function Cabecalho() {
     margin-top: auto;
   `;
 
+  
+  // const Divider = styled.div`
+  //   width: 2px;
+  //   background-color: black;
+  // `;
  const Divider = styled.div`
   width: 2px;
   height: 80%;
@@ -93,7 +105,10 @@ function Cabecalho() {
     margin-bottom: 12px;
   `;
 
-
+    // const Description = styled.p`
+    //   font-size: 16px;
+    //   color: #555;
+    // `;
 const Description = styled.p`
   font-size: 16px;
   color: #555;
@@ -107,6 +122,12 @@ const Description = styled.p`
     bottom: 0;
     width: 100%;
     height: 2px;
+    /* background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.1)
+    ); */
     border-radius: 1px;
     overflow: hidden;
   }
@@ -118,6 +139,12 @@ const Description = styled.p`
     bottom: 0;
     width: 9%;
     height: 2px;
+    /* background: linear-gradient(
+      to right,
+      transparent 20%,
+      rgba(255, 255, 255, 0.7) 50%,
+      transparent 60%
+    ); */
        background: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.1),
@@ -139,6 +166,8 @@ const Description = styled.p`
   }
 `;
 
+
+
 const rotate = keyframes`
   0% {
     transform: rotate(0deg);
@@ -158,6 +187,7 @@ const ProfileWrapper = styled.div`
   margin-top:1rem;
   justify-content: center;
 `;
+
 
 const SpinnerBorder = styled.div`
   position: absolute;
@@ -200,10 +230,10 @@ const Profile = styled.img`
           <SpinnerBorder />
           <Profile src={foto} alt="Foto de perfil" />
         </ProfileWrapper>
+      
         <Role> Desevolvedor Júnior III Full-Stack </Role>
         <Footer>Desenvolvedor<br />© 2025 Adriano Silva Sampaio</Footer>
-      </Principal>
-     
+      </Principal>  
       <Divider />
       <RightSide>
         <Date>{dia}  {mes} , {ano} </Date>
