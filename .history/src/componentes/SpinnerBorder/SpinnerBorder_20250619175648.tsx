@@ -24,18 +24,19 @@ const SpinnerBorderDiv = styled.div`
   mask: radial-gradient(transparent 48%, #000 52%);
   -webkit-mask: radial-gradient(transparent 48%, #000 52%);
   box-shadow: 0 0 6px rgba(235, 79, 68, 0.5);
-    width: 230px;
-    height: 230px;
+
+    /* width: 230px;
+    height: 230px; */
 
   @media (max-width: 768px) {
-    width: 10px;
-    height: 10px;
-
+    width: 190px;
+    height: 210px;
+     border-radius: 100%;
   }
 
   @media (max-width: 480px) {
-    width:10px;
-    height: 10px;
+    width: 110px;
+    height: 110px;
   }
 `;
 

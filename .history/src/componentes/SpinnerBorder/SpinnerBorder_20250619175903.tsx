@@ -28,14 +28,14 @@ const SpinnerBorderDiv = styled.div`
     height: 230px;
 
   @media (max-width: 768px) {
-    width: 10px;
-    height: 10px;
+    width: 230px;
+    height: 230px;
 
   }
 
   @media (max-width: 480px) {
-    width:10px;
-    height: 10px;
+    width: 110px;
+    height: 110px;
   }
 `;
 

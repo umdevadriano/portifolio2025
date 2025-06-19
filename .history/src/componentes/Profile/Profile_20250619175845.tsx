@@ -11,6 +11,7 @@ function Profile(){
         background-color: white;
         z-index: 1;
         filter: grayscale(60%) contrast(110%);
+        
         @media (max-width: 768px) {
             width: 140px;
             height: 140px;
@@ -20,8 +21,6 @@ function Profile(){
             height: 100px;
         }
     `;
-
-    
     
     return (
         <>
