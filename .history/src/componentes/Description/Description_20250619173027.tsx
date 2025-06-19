@@ -7,8 +7,8 @@ const DescriptionP = styled.p`
   font-size: 16px;
   color: #555;
   position: relative;
+  background-color: #ed0000;
   display: flex;
-  padding-right: 3rem;
   justify-content: center;
   align-items: center;
 

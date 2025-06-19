@@ -7,7 +7,7 @@ function Date({ children }: Props){
         font-size: 18px;
         font-weight: bold;
         margin-bottom: 12px;
-        padding: 0.5rem;
+        padding: 1rem;
     `;
     return (
         <>

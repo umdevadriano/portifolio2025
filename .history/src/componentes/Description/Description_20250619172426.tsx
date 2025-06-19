@@ -7,14 +7,13 @@ const DescriptionP = styled.p`
   font-size: 16px;
   color: #555;
   position: relative;
-  display: flex;
-  padding-right: 3rem;
-  justify-content: center;
-  align-items: center;
+  padding-bottom: 8px;
+  padding-right: 8px;
+  background-color: #555;
 
   &::after {
     content: "";
-    position: absolute; 
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;

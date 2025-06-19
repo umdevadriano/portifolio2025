@@ -26,6 +26,7 @@ function ContainerPrincipal() {
     margin: 0;
     padding: 0;
   `;
+
   return (
     <>
       <GlobalStyle />
@@ -35,4 +36,5 @@ function ContainerPrincipal() {
     </>
   )
 }
+
 export default ContainerPrincipal

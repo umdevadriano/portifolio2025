@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import Cabecalho from '../Body/Body';
+import Cabecalho from '../cabecalho/Cabecalho';
 function ContainerPrincipal() {
   const GlobalStyle = createGlobalStyle`
     *, *::before, *::after {
@@ -26,6 +26,7 @@ function ContainerPrincipal() {
     margin: 0;
     padding: 0;
   `;
+
   return (
     <>
       <GlobalStyle />
@@ -35,4 +36,5 @@ function ContainerPrincipal() {
     </>
   )
 }
+
 export default ContainerPrincipal
