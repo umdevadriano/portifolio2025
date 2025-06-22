@@ -7,7 +7,7 @@ type Props = {
 function Title({ children }: Props){
  
     const TitleH2 = styled.h2`
-        font-size: 1.3rem;
+        font-size: 2rem;
         margin-bottom: 1rem;
         color: #222;
   `; 

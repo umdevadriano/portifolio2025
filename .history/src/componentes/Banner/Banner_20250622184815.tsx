@@ -12,9 +12,8 @@ function Banner({ children }: Props){
         padding: 0.5rem;
         font-weight: bold;
         font-size: 16px;
-        display: inline-block;
+        /* display: inline-block; */
         border-radius: 4px;
-        width: 24rem;
     `;
     return (
         <>
