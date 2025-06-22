@@ -20,6 +20,8 @@ function Footer({ children }: Props){
         <>
             <FooterDiv> 
                 <FooterP>{children}</FooterP>
+                <FooterP>{children}</FooterP>
+                <FooterP>{children}</FooterP>
             </FooterDiv>
         </>
     )

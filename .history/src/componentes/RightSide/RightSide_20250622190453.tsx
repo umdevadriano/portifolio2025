@@ -10,7 +10,6 @@ function RightSide({ children }: Props){
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
     `;
 
     return (

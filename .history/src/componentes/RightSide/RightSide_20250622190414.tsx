@@ -5,12 +5,11 @@ type Props = {
 
 function RightSide({ children }: Props){
     const RightSideDiv = styled.div`
-        flex: 1;
-        padding: 32px;
+        /* flex: 1; */
+        padding: rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
     `;
 
     return (

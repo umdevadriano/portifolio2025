@@ -9,7 +9,7 @@ function Footer({ children }: Props){
     const FooterP = styled.p`
         font-size: 1rem;
         color: #999;
-        /* margin-top: auto; */
+        margin-top: auto;
     `;
     const FooterDiv = styled.div`
        display: flex;

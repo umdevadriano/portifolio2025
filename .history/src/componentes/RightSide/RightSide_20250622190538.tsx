@@ -11,6 +11,7 @@ function RightSide({ children }: Props){
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: black;
     `;
 
     return (

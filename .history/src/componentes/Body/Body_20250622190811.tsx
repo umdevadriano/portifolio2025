@@ -22,13 +22,17 @@ function Cabecalho() {
         <ProfileWrapper>
           <Profile/>
         </ProfileWrapper>
-        <Role> Adriano Silva Sampaio</Role>
         <Role> Desevolvedor Júnior III Full-Stack </Role>
       </Principal>
       <Divider />
       <RightSide>
         <DateComponente>{dia}  {mes} , {ano} </DateComponente>
         <Description>
+          Adriano Silva Sampaio<br />
+          Desevolvedor Júnior III Full-Stack
+        </Description>
+        <Description>
+          {/* Adriano Silva Sampaio<br /> */}
           Desevolvedor Júnior III Full-Stack
         </Description>
       </RightSide>

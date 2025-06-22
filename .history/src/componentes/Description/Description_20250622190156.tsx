@@ -46,15 +46,9 @@ const DescriptionP = styled.p`
     }
   }
 `;
-const DescriptionDiv = styled.div`
-  display: flex;
-  justify-content: center;
-`;
     return (
         <>
-          <DescriptionDiv>
-            <DescriptionP>{children}</DescriptionP>
-          </DescriptionDiv>
+        <DescriptionP>{children}</DescriptionP>
         </>
     )
 }

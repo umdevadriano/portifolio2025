@@ -22,7 +22,6 @@ function Cabecalho() {
         <ProfileWrapper>
           <Profile/>
         </ProfileWrapper>
-        <Role> Adriano Silva Sampaio</Role>
         <Role> Desevolvedor Júnior III Full-Stack </Role>
       </Principal>
       <Divider />

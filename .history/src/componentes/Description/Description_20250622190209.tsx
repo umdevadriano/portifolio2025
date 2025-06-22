@@ -6,6 +6,7 @@ function Description({ children }: Props){
 const DescriptionP = styled.p`
   font-size: 16px;
   color: #555;
+  padding: 1rem;
   /* position: relative; */
 
   &::after {
@@ -46,15 +47,9 @@ const DescriptionP = styled.p`
     }
   }
 `;
-const DescriptionDiv = styled.div`
-  display: flex;
-  justify-content: center;
-`;
     return (
         <>
-          <DescriptionDiv>
-            <DescriptionP>{children}</DescriptionP>
-          </DescriptionDiv>
+        <DescriptionP>{children}</DescriptionP>
         </>
     )
 }

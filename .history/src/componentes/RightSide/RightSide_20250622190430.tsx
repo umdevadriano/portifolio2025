@@ -8,9 +8,8 @@ function RightSide({ children }: Props){
         flex: 1;
         padding: 32px;
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         justify-content: center;
-        align-items: center;
     `;
 
     return (

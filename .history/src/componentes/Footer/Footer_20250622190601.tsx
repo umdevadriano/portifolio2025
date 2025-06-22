@@ -7,9 +7,9 @@ type Props = {
 function Footer({ children }: Props){
 
     const FooterP = styled.p`
-        font-size: 1rem;
+        font-size: 12px;
         color: #999;
-        /* margin-top: auto; */
+        margin-top: auto;
     `;
     const FooterDiv = styled.div`
        display: flex;
@@ -19,7 +19,7 @@ function Footer({ children }: Props){
     return (
         <>
             <FooterDiv> 
-                <FooterP>{children}</FooterP>
+                {/* <FooterP>{children}</FooterP> */}
             </FooterDiv>
         </>
     )
