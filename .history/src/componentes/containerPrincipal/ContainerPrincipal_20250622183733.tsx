@@ -8,7 +8,6 @@ function ContainerPrincipal() {
     *, *::before, *::after {
     box-sizing: border-box;
     background-color: #f7f2f6;
-    margin: 1rem;
   }
 
     html, body {

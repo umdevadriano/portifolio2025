@@ -2,6 +2,7 @@ import Principal from '../Principal/Principal';
 import Title from '../Title/Title';
 import Banner from '../Banner/Banner';
 import ProfileWrapper from '../ProfileWrapper/ProfileWrapper';
+import SpinnerBorder from '../SpinnerBorder/SpinnerBorder';
 import Profile from '../Profile/Profile';
 import Role from '../Role/Role';
 import Divider from '../Divider/Divider';
@@ -20,6 +21,7 @@ function Cabecalho() {
         <Title>Acompanhe aqui minhas atualizações.</Title>
         <Banner>Seja bem-vindo ao meu espaço profissional!</Banner>
         <ProfileWrapper>
+          <SpinnerBorder/>
           <Profile/>
         </ProfileWrapper>
         <Role> Desevolvedor Júnior III Full-Stack </Role>
