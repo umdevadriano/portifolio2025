@@ -10,12 +10,13 @@ function Title({ children }: Props){
         font-size: 1.3rem;
         margin-bottom: 1rem;
         color: #222;
-
+        
         @media (max-width: 768px) {
-          margin-top: 5rem;
+          width: 200px;
+          height: 200px;
         }
 
-     
+        /* margin-top: 5rem; */
   `; 
     return (
         <>

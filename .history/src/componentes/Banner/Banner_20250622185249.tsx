@@ -14,6 +14,7 @@ function Banner({ children }: Props){
         font-size: 16px;
         display: inline-block;
         border-radius: 4px;
+        /* width: 25rem; */
     `;
     return (
         <>

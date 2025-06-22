@@ -11,11 +11,7 @@ function Title({ children }: Props){
         margin-bottom: 1rem;
         color: #222;
 
-        @media (max-width: 768px) {
-          margin-top: 5rem;
-        }
-
-     
+        /* margin-top: 5rem; */
   `; 
     return (
         <>
