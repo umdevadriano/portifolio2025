@@ -1,13 +1,9 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import Body from '../Body/Body';
-import Footer from '../Footer/Footer';
-const data = new Date();
-const ano = data.getFullYear(); 
+import Cabecalho from '../Body/Body';
 function ContainerPrincipal() {
   const GlobalStyle = createGlobalStyle`
     *, *::before, *::after {
     box-sizing: border-box;
-    background-color: #f7f2f6;
   }
 
     html, body {
@@ -23,31 +19,29 @@ function ContainerPrincipal() {
     justify-content: center;
     width: 100%;
     height: 100vh;
+    background-color: #f7f2f6;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     font-family: 'Arial', sans-serif;
     overflow: hidden;
     margin: 0;
     padding: 0;
 
-    /* @media (max-width: 768px) {
+    @media (max-width: 768px) {
       display: flex;
       flex-direction: column;
-      justify-items: center;
-      justify-content: center;
-      align-items: center;
     }
 
   @media (max-width: 480px) {
     width: 0px;
     height: 0px;
-  } */
+  }
   `;
   return (
     <>
       <GlobalStyle />
       <Principal> 
-        <Body/>
+        <Cabecalho/>
       </Principal>
-      <Footer>Desenvolvimento de Software<br />© {ano} Adriano Silva Sampaio</Footer>
     </>
   )
 }

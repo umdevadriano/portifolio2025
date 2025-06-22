@@ -23,6 +23,8 @@ function ContainerPrincipal() {
     justify-content: center;
     width: 100%;
     height: 100vh;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+    /* background-color: #f7f2f6; */
     font-family: 'Arial', sans-serif;
     overflow: hidden;
     margin: 0;

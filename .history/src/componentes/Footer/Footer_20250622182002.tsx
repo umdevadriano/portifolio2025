@@ -10,19 +10,11 @@ function Footer({ children }: Props){
         font-size: 12px;
         color: #999;
         margin-top: auto;
-    `;
-    const FooterDiv = styled.div`
-       display: flex;
-       justify-content: left;
-       align-items: center;
-       margin-left: 2rem;    
+        display: flex;
     `;
     return (
         <>
-        <FooterDiv> 
-            <FooterP>{children}</FooterP>
-        </FooterDiv>
-      
+        <FooterP>{children}</FooterP>
         </>
     )
 }

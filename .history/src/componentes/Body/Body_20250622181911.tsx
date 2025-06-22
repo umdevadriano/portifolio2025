@@ -5,7 +5,7 @@ import ProfileWrapper from '../ProfileWrapper/ProfileWrapper';
 import SpinnerBorder from '../SpinnerBorder/SpinnerBorder';
 import Profile from '../Profile/Profile';
 import Role from '../Role/Role';
-// import Footer from '../Footer/Footer';
+import Footer from '../Footer/Footer';
 import Divider from '../Divider/Divider';
 import RightSide from '../RightSide/RightSide';
 import DateComponente from '../DateComponente/DateComponente';
@@ -35,7 +35,7 @@ function Cabecalho() {
           Desevolvedor Júnior III Full-Stack
         </Description>
       </RightSide>
-      {/* <Footer>Desenvolvimento de Software<br />© {ano} Adriano Silva Sampaio</Footer> */}
+      <Footer>Desenvolvimento de Software<br />© {ano} Adriano Silva Sampaio</Footer>
     </> 
   )
 }

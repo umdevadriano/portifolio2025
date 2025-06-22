@@ -15,7 +15,9 @@ function Footer({ children }: Props){
        display: flex;
        justify-content: left;
        align-items: center;
-       margin-left: 2rem;    
+       margin-left: 2rem;
+       /* padding: 0.3rem; */
+    
     `;
     return (
         <>

@@ -13,9 +13,9 @@ function Footer({ children }: Props){
     `;
     const FooterDiv = styled.div`
        display: flex;
-       justify-content: left;
-       align-items: center;
-       margin-left: 2rem;    
+       justify-content: center;
+     align-items: end;
+       background-color: black;
     `;
     return (
         <>

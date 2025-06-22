@@ -7,7 +7,6 @@ function ContainerPrincipal() {
   const GlobalStyle = createGlobalStyle`
     *, *::before, *::after {
     box-sizing: border-box;
-    background-color: #f7f2f6;
   }
 
     html, body {
@@ -23,6 +22,8 @@ function ContainerPrincipal() {
     justify-content: center;
     width: 100%;
     height: 100vh;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+    /* background-color: #f7f2f6; */
     font-family: 'Arial', sans-serif;
     overflow: hidden;
     margin: 0;
@@ -45,9 +46,9 @@ function ContainerPrincipal() {
     <>
       <GlobalStyle />
       <Principal> 
-        <Body/>
+        <Body/>    <Footer>Desenvolvimento de Software<br />© {ano} Adriano Silva Sampaio</Footer>
       </Principal>
-      <Footer>Desenvolvimento de Software<br />© {ano} Adriano Silva Sampaio</Footer>
+  
     </>
   )
 }
