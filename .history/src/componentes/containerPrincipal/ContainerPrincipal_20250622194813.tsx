@@ -2,6 +2,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 import Body from '../Body/Body';
 import Footer from '../Footer/Footer';
 import RedesSociais from '../redesSociais/redesSociais';
+import instagram from '../redesSociais/instagram.png';
 import github from '../redesSociais/github.png';
 import linkedin from '../redesSociais/linkedin.png';
 

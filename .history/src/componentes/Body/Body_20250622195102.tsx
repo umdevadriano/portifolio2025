@@ -7,7 +7,7 @@ import Role from '../Role/Role';
 import Divider from '../Divider/Divider';
 import RightSide from '../RightSide/RightSide';
 import DateComponente from '../DateComponente/DateComponente';
-import EmDesenvolvimento from '../EmDesenvolvimentoWrapper/EmDesenvolvimentoWrapper ';
+import Description from '../Description/Description';
 const data = new Date();
 const dia = String(data.getDate()).padStart(2, '0'); 
 const mes = data.toLocaleString('pt-BR', { month: 'long' }); 
@@ -23,12 +23,14 @@ function Cabecalho() {
           <Profile/>
         </ProfileWrapper>
         <Role> Adriano Silva Sampaio</Role>
-        <Role> Desevolvedor  Full-Stack </Role>
+        <Role> Desevolvedor Júnior III Full-Stack </Role>
       </Principal>
       <Divider />
       <RightSide>
         <DateComponente>{dia}  {mes} , {ano} </DateComponente>
-        <EmDesenvolvimento/>
+        <Description>
+          Desevolvedor Júnior III Full-Stack
+        </Description>
       </RightSide>
     </> 
   )

@@ -2,6 +2,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 import Body from '../Body/Body';
 import Footer from '../Footer/Footer';
 import RedesSociais from '../redesSociais/redesSociais';
+import instagram from '../redesSociais/instagram.png';
 import github from '../redesSociais/github.png';
 import linkedin from '../redesSociais/linkedin.png';
 
@@ -9,10 +10,7 @@ const data = new Date();
 const ano = data.getFullYear(); 
 function ContainerPrincipal() {
   
-  const redes = [
-    { src: github, link: 'https://github.com/umdevadriano' },
-    { src: linkedin, link: 'https://www.linkedin.com/in/adriano-silva-sampaio/' }
-  ];
+  const icones = [github, instagram, linkedin];
   const GlobalStyle = createGlobalStyle`
     *, *::before, *::after {
     box-sizing: border-box;
@@ -54,7 +52,7 @@ function ContainerPrincipal() {
       <Principal> 
         <Body/>
       </Principal>
-      <RedesSociais redes={redes}/>
+      <RedesSociais imagens={icones}/>
       <Footer>Desenvolvimento de Software<br />© {ano} Adriano Silva Sampaio</Footer>
     </>
   )

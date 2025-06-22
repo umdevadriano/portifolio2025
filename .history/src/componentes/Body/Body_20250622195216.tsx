@@ -7,7 +7,7 @@ import Role from '../Role/Role';
 import Divider from '../Divider/Divider';
 import RightSide from '../RightSide/RightSide';
 import DateComponente from '../DateComponente/DateComponente';
-import EmDesenvolvimento from '../EmDesenvolvimentoWrapper/EmDesenvolvimentoWrapper ';
+import Description from '../Description/Description';
 const data = new Date();
 const dia = String(data.getDate()).padStart(2, '0'); 
 const mes = data.toLocaleString('pt-BR', { month: 'long' }); 
@@ -28,7 +28,9 @@ function Cabecalho() {
       <Divider />
       <RightSide>
         <DateComponente>{dia}  {mes} , {ano} </DateComponente>
-        <EmDesenvolvimento/>
+        <Description>
+         Em Desenvolvimento ...
+        </Description>
       </RightSide>
     </> 
   )

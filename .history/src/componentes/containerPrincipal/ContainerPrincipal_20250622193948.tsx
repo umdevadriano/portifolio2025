@@ -2,6 +2,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 import Body from '../Body/Body';
 import Footer from '../Footer/Footer';
 import RedesSociais from '../redesSociais/redesSociais';
+import instagram from '../redesSociais/instagram.png';
 import github from '../redesSociais/github.png';
 import linkedin from '../redesSociais/linkedin.png';
 
@@ -10,8 +11,9 @@ const ano = data.getFullYear();
 function ContainerPrincipal() {
   
   const redes = [
-    { src: github, link: 'https://github.com/umdevadriano' },
-    { src: linkedin, link: 'https://www.linkedin.com/in/adriano-silva-sampaio/' }
+    { src: github, link: 'https://github.com/seuperfil' },
+    { src: instagram, link: 'https://www.instagram.com/adriano_orsamp/' },
+    { src: linkedin, link: 'https://linkedin.com/in/seuperfil' }
   ];
   const GlobalStyle = createGlobalStyle`
     *, *::before, *::after {
