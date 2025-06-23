@@ -4,7 +4,6 @@ import Footer from '../Footer/Footer';
 import RedesSociais from '../redesSociais/redesSociais';
 import github from '../redesSociais/github.png';
 import linkedin from '../redesSociais/linkedin.png';
-import ProfessionalStory from '../ProfessionalStory/ProfessionalStory';
 
 const data = new Date();
 const ano = data.getFullYear(); 
@@ -57,7 +56,6 @@ function ContainerPrincipal() {
         <Body/>
       </Principal>
       <RedesSociais redes={redes}/>
-      {/* <ProfessionalStory/> */}
       <Footer>Desenvolvimento de Software<br />© {ano} Adriano Silva Sampaio</Footer>
     </>
   )

@@ -1,5 +1,5 @@
-import  { useEffect, useState } from 'react';
-import styled from 'styled-components';
+import React, { useEffect, useState } from 'react';
+import styled, { keyframes } from 'styled-components';
 
 const texto = `Desde o início da minha trajetória como desenvolvedor,
 sempre fui movido pela curiosidade e pelo desejo de transformar ideias em soluções reais.
@@ -8,27 +8,61 @@ otimizam processos e demonstram meu comprometimento com a evolução contínua.`
 
 const linhas = texto.split('\n').map(l => l.trim());
 
+// 🔆 Animação da luz de fundo (efeito de lâmpada suave)
+const pulseLight = keyframes`
+  0% {
+    background-position: 50% 50%;
+    opacity: 0.9;
+  }
+  50% {
+    background-position: 52% 48%;
+    opacity: 1;
+  }
+  100% {
+    background-position: 50% 50%;
+    opacity: 0.9;
+  }
+`;
+
 const Container = styled.div`
-  /* background: #f4f4f4; */
-  padding: 24px;
+  background: radial-gradient(circle at center, rgba(255, 255, 150, 0.25), transparent 60%);
+  background-repeat: no-repeat;
+  background-size: 250% 250%;
+  animation: ${pulseLight} 6s ease-in-out infinite;
+
+  padding: 32px;
   max-width: 90%;
-  margin: 40px auto;
-  border-radius: 12px;
+  margin: 60px auto;
+  border-radius: 16px;
   font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
   color: #222;
   line-height: 1.8;
+  box-shadow: 0 0 40px rgba(255, 255, 100, 0.2);
+  position: relative;
+`;
+
+const fadeIn = keyframes`
+  from { opacity: 0; transform: translateY(2px); }
+  to { opacity: 1; transform: translateY(0); }
 `;
 
 const Linha = styled.p`
   margin: 0;
+  animation: ${fadeIn} 0.4s ease;
+`;
+
+const Palavra = styled.span`
+  margin-right: 4px;
+  animation: ${fadeIn} 0.3s ease;
+  display: inline-block;
 `;
 
 const Cursor = styled.span`
   display: inline-block;
   width: 1ch;
   border-right: 2px solid #333;
-  animation: blink 0.8s steps(1) infinite;
+  animation: blink 0.8s step-end infinite;
 
   @keyframes blink {
     50% {
@@ -58,9 +92,9 @@ export default function EmDesenvolvimento() {
           setLinhasDigitadas((prev) => [...prev, palavras.join(' ')]);
           setPalavrasDigitadas([]);
           setLinhaAtual((prev) => prev + 1);
-        }, 600); // pausa entre as linhas
+        }, 1000);
       }
-    }, 180); // tempo entre cada palavra
+    }, 280);
 
     return () => clearInterval(intervalo);
   }, [linhaAtual]);
@@ -73,7 +107,10 @@ export default function EmDesenvolvimento() {
 
       {linhaAtual < linhas.length && (
         <Linha>
-          {palavrasDigitadas.join(' ')} <Cursor />
+          {palavrasDigitadas.map((palavra, i) => (
+            <Palavra key={i}>{palavra}</Palavra>
+          ))}
+          <Cursor />
         </Linha>
       )}
     </Container>

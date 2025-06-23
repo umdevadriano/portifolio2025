@@ -1,4 +1,4 @@
-import  { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
 const texto = `Desde o início da minha trajetória como desenvolvedor,
@@ -9,7 +9,7 @@ otimizam processos e demonstram meu comprometimento com a evolução contínua.`
 const linhas = texto.split('\n').map(l => l.trim());
 
 const Container = styled.div`
-  /* background: #f4f4f4; */
+  background: #f4f4f4;
   padding: 24px;
   max-width: 90%;
   margin: 40px auto;

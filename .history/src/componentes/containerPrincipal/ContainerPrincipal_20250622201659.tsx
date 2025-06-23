@@ -57,7 +57,7 @@ function ContainerPrincipal() {
         <Body/>
       </Principal>
       <RedesSociais redes={redes}/>
-      {/* <ProfessionalStory/> */}
+      <ProfessionalStory/>
       <Footer>Desenvolvimento de Software<br />© {ano} Adriano Silva Sampaio</Footer>
     </>
   )
