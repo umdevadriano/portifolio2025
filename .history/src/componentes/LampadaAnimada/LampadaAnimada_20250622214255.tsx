@@ -43,6 +43,7 @@ const LampadaAnimada: React.FC<LuzProps> = ({ className }) => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1920 1920"
       className={className}
+     
     >
       <defs>
         <filter id="glow" height="200%" width="200%" x="-50%" y="-50%">
