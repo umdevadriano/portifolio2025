@@ -36,7 +36,7 @@ const SvgLamp = styled.svg`
     transition: stroke 0.3s ease;
   }
 `;
-  
+
 const LampadaAnimada: React.FC<LuzProps> = ({ className }) => {
   return (
     <SvgLamp
