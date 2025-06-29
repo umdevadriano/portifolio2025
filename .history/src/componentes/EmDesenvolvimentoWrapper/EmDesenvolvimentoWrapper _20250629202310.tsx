@@ -12,7 +12,7 @@ const Container = styled.div`
   /* background: #f4f4f4; */
   padding: 24px;
   max-width: 90%;
-  height: 100%;
+  height: 20%;
   margin: 40px auto;
   border-radius: 12px;
   font-family: 'Courier New', Courier, monospace;
