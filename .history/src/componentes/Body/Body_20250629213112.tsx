@@ -34,6 +34,8 @@ function Cabecalho() {
          {/* <TextoSimples/> */}
         {/* <EmDesenvolvimento/> */}
       </RightSide>
+               <TextoSimples/>
+
     </> 
   )
 }

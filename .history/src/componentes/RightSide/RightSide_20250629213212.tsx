@@ -6,9 +6,9 @@ type Props = {
 function RightSide({ children }: Props){
     const RightSideDiv = styled.div`
         flex: 1;
-        padding: 32px;
+        padding: 2rem;
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         justify-content: center;
         align-items: center;
     `;

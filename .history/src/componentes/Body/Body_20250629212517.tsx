@@ -9,7 +9,6 @@ import RightSide from '../RightSide/RightSide';
 import DateComponente from '../DateComponente/DateComponente';
 import EmDesenvolvimento from '../EmDesenvolvimentoWrapper/EmDesenvolvimentoWrapper ';
 import LampadaAnimada from '../LampadaAnimada/LampadaAnimada';
-import TextoSimples from '../TextoSimples/TextoSimples';
 const data = new Date();
 const dia = String(data.getDate()).padStart(2, '0'); 
 const mes = data.toLocaleString('pt-BR', { month: 'long' }); 
@@ -31,7 +30,6 @@ function Cabecalho() {
       <RightSide>
         <DateComponente>{dia}  {mes} , {ano} </DateComponente>
         <LampadaAnimada/>
-         {/* <TextoSimples/> */}
         {/* <EmDesenvolvimento/> */}
       </RightSide>
     </> 

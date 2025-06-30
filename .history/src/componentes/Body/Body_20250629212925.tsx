@@ -31,7 +31,7 @@ function Cabecalho() {
       <RightSide>
         <DateComponente>{dia}  {mes} , {ano} </DateComponente>
         <LampadaAnimada/>
-         {/* <TextoSimples/> */}
+         <TextoSimples/>
         {/* <EmDesenvolvimento/> */}
       </RightSide>
     </> 
