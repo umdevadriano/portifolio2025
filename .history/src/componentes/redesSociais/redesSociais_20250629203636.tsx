@@ -10,10 +10,11 @@ type Props = {
 };
 
 const RedesSociaisDiv = styled.div`
-  flex: 1;
+  /* flex: 1; */
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
+  margin-top:  2rem;
 
   img {
     width: 2rem;

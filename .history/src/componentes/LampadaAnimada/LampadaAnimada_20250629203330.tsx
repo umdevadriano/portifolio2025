@@ -17,8 +17,8 @@ const glowAnimation = keyframes`
 `;
 
 const SvgLamp = styled.svg`
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 100px;
   cursor: pointer;
   display: block;
   margin: 0 auto;

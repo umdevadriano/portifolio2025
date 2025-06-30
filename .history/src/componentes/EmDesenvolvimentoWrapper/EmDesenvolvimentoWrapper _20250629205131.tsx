@@ -1,28 +1,34 @@
-import { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
-const texto = `Desde o início como desenvolvedor, sou movido pela curiosidade e vontade de transformar ideias em soluções reais. Meu GitHub reflete essa jornada com projetos práticos e focados em evolução contínua.`;
+const texto = `Desde o início como desenvolvedor,
+ sou movido pela curiosidade e vontade de transformar ideias em soluções reais. 
+Meu GitHub reflete essa jornada com projetos práticos e focados em evolução contínua.
+`;
 
-const linhas = texto.split('\n').map((l) => l.trim()).filter(Boolean);
+const linhas = texto.split('\n').map(l => l.trim());
 
 const Container = styled.div`
-  padding: 16px;
-  max-width: 800px;
-  margin: 32px auto;
+  /* background: #f4f4f4; */
+  /* padding: 24px; */
+    /* max-width: 90%;
+    height: 100%; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  /* margin: 40px auto; */
   border-radius: 12px;
   font-family: 'Courier New', Courier, monospace;
   font-size: 1rem;
   color: #222;
-  line-height: 1.6;
-
-  @media (max-width: 600px) {
-    padding: 12px;
-    font-size: 0.95rem;
-  }
+  line-height: 1.8;
 `;
 
 const Linha = styled.p`
   margin: 0;
+  /* padding: 1rem; */
+  background-color: black;
+  margin-bottom: 2rem;
 `;
 
 const Cursor = styled.span`
@@ -46,7 +52,7 @@ export default function EmDesenvolvimento() {
   useEffect(() => {
     if (linhaAtual >= linhas.length) return;
 
-    const palavras = linhas[linhaAtual].split(' ').filter(Boolean);
+    const palavras = linhas[linhaAtual].split(' ');
     let index = 0;
 
     const intervalo = setInterval(() => {
@@ -59,9 +65,9 @@ export default function EmDesenvolvimento() {
           setLinhasDigitadas((prev) => [...prev, palavras.join(' ')]);
           setPalavrasDigitadas([]);
           setLinhaAtual((prev) => prev + 1);
-        }, 500);
+        }, 600); // pausa entre as linhas
       }
-    }, 150);
+    }, 180); // tempo entre cada palavra
 
     return () => clearInterval(intervalo);
   }, [linhaAtual]);
