@@ -36,8 +36,7 @@ const Container = styled.div`
   }
 `;
 
-const texto = `Desde o início como desenvolvedor, sou movido pela curiosidade e vontade de transformar ideias em soluções reais.`;
-const texto2 = ` Meu GitHub reflete essa jornada com projetos práticos e focados em evolução contínua.`;
+const texto = `Desde o início como desenvolvedor, sou movido pela curiosidade e vontade de transformar ideias em soluções reais. Meu GitHub reflete essa jornada com projetos práticos e focados em evolução contínua.`;
 
 export default function EmDesenvolvimento() {
   const [mostrar, setMostrar] = useState(false);
@@ -50,5 +49,5 @@ export default function EmDesenvolvimento() {
     return () => clearTimeout(timer);
   }, []);
 
-  return mostrar ? <Container>{texto} {texto2}</Container>  : null;
+  return mostrar ? <Container>{texto}</Container> : null;
 }
